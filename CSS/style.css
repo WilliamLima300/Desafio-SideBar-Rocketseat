@@ -35,6 +35,7 @@ body{
 /* adicionando estilo a tag aside */
 aside{
     width: 100%;
+    height: 100%;
     background-color: var(--green);
     border-radius: 2px;
 }
