@@ -1,0 +1,118 @@
+/* Adicionar variaveis para pagina */
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+    --font-family:'poppins',sans-serif;
+}
+
+/* Zerar margin padding e adicionando boxsizing */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+/* adicionando estilo a tag body e grid layout */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    display: grid;
+    grid-template-columns: 60px 3fr;
+}
+
+.invisible{
+    display:none;
+    margin: 0 auto;
+}
+
+/* adicionando estilo a tag aside */
+aside{
+    width: 100%;
+    background-color: var(--green);
+    border-radius: 2px;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-grow:8;
+}
+
+
+.buttons{
+width:100%;
+margin:5px;
+padding: 4px 8px;
+list-style: none;
+border-radius: 5px;
+
+}
+.buttons:hover{
+    background-color: var(--light-green);
+}
+
+.buttons a{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color:var(--text-color);
+
+}
+
+.buttons a img{
+    margin:0 3px 0 3px;
+}
+
+.buttons-text{
+    color: var(--text-color);
+}
+
+.logo{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow:1;
+}
+
+.exit{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow:1;
+}
+
+.user{
+width: 50px;
+margin-right: 10px;
+}
+
+
+/* adicionando estilo a tag main */
+main{
+    width: 100%;
+    padding: 30px 30px;
+}
+
